@@ -8,8 +8,6 @@ RUN \
   apt-get update && \
   apt-get install -y alien software-properties-common autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev wget
 
-RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
 
 RUN wget https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/snowflake-odbc-2.21.1.x86_64.rpm
 RUN wget https://sfc-repo.snowflakecomputing.com/snowcd/linux/latest/snowflake-snowcd-1.0.2.x86_64.rpm
