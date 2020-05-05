@@ -3,8 +3,8 @@ FROM ubuntu:18.04
 ENV LC_ALL C.UTF-8
 ENV LANG C.UTF-8
 
-COPY requirements.txt requirements.txt
-COPY ./terraform ./terraform
+COPY ./docker-image/requirements.txt requirements.txt
+COPY ./docker-image/terraform terraform
 
 # Install python 3 + snowflake connectors
 RUN apt-get update
