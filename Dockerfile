@@ -13,6 +13,7 @@ RUN pip3 install --upgrade snowflake-connector-python
 RUN pip3 install -r requirements.txt --no-index
 
 # Install terraform
+WORKDIR /tmp
 RUN wget https://releases.hashicorp.com/terraform/0.12.18/terraform_0.12.18_linux_amd64.zip
 RUN unzip terraform_0.12.18_linux_amd64.zip
 RUN mv terraform /usr/local/bin/
