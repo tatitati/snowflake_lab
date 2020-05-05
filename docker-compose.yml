@@ -1,0 +1,8 @@
+version: '3.4'
+services:
+  snowflake-stager:
+    build:
+      context: .
+    volumes:
+      - "./docker-image/main.py:/main.py"
+      - "./docker-image/run.sh:/run.sh"
